@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/it_logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CEO -->
+    <title>Tchossy</title>
+    <meta
+      name="description"
+      content="A Tchossy é uma provedora de serviços, consultoria em TI e desenvolvimento de software. Ajudamos organizações e empresas a melhorar o desempenho dos negócios e aumentar sua competitividade."
+    />
+
+    <meta property="og:title" content="Tchossy Solution" />
+    <meta
+      property="og:description"
+      content="A Tchossy é uma provedora de serviços, consultoria em TI e desenvolvimento de software. Ajudamos organizações e empresas a melhorar o desempenho dos negócios e aumentar sua competitividade."
+    />
+    <meta
+      property="og:image"
+      content="https://ia.media-imdb.com/images/rock.jpg"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <style>
+      .progress-container {
+        position: fixed;
+        z-index: 40;
+        width: 100vw;
+        height: 6px;
+        background: #fff;
+      }
+
+      .progress-bar {
+        height: 8px;
+        background: #2bd87e;
+        width: 0vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function () {
+        myFunction()
+      }
+
+      function myFunction() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight
+        var scrolled = (winScroll / height) * 100
+        document.getElementById('myBar').style.width = scrolled + 'vw'
+      }
+    </script>
+  </body>
+</html>
