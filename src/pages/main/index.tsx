@@ -6,14 +6,7 @@ import { useNavigate } from 'react-router-dom'
 //Swiper
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import {
-  Navigation,
-  Pagination,
-  Mousewheel,
-  Keyboard,
-  Autoplay,
-  EffectFade
-} from 'swiper'
+import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import 'swiper/css/effect-fade'
@@ -105,21 +98,18 @@ function Home() {
 
   const docSolutions = [
     {
-      imgUrl:
-        'https://demo.ovatheme.com/infetech/wp-content/uploads/2022/03/service1-01.jpg',
-      title: 'Soluções perfeitas que os negócios exigem',
+      imgUrl: '/service/service1.png',
+      title: 'Venda de diversos',
       icon: <AiFillStar size={36} />
     },
     {
-      imgUrl:
-        'https://demo.ovatheme.com/infetech/wp-content/uploads/2022/03/service1-03.jpg',
+      imgUrl: '/service/service2.png',
       title: 'Designer gráficos e identidade visual',
       icon: <MdDesignServices size={36} />
     },
     {
-      imgUrl:
-        'https://demo.ovatheme.com/infetech/wp-content/uploads/2022/03/service1-02.jpg',
-      title: 'Fornecendo excelentes soluções de tecnologia',
+      imgUrl: '/service/service3.png',
+      title: 'Video e fotografia',
       icon: <AiFillCode size={36} />
     }
   ]
@@ -610,10 +600,10 @@ function Home() {
                     qualidade
                   </li>
                   <li>
-                    <BsFillCheckCircleFill /> Identidade visual impactante
+                    <BsFillCheckCircleFill /> Design Gráfico
                   </li>
                   <li>
-                    <BsFillCheckCircleFill /> Soluções tecnológicas inovadoras
+                    <BsFillCheckCircleFill /> Video e fotografia
                   </li>
                 </ul>
 

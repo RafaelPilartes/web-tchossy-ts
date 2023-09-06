@@ -153,7 +153,7 @@ export const HeaderContainerStyles = styled.header`
           align-items: center;
           gap: 0.8rem;
 
-          padding: 0.4rem 0rem;
+          padding: 1rem 0rem;
 
           transition: ease 0.4s;
 
@@ -167,6 +167,39 @@ export const HeaderContainerStyles = styled.header`
             bottom: 0;
             left: 0;
             background-color: ${({ theme }) => theme.colors['brand-primary']};
+
+            transition: 0.4s ease;
+          }
+
+          :hover {
+            ::before {
+              width: 100%;
+            }
+          }
+        }
+        span.text-primary {
+          position: relative;
+          font-size: 1rem;
+          color: ${({ theme }) => theme.colors['brand-primary']};
+
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+
+          padding: 1rem 0rem;
+
+          transition: ease 0.4s;
+
+          cursor: pointer;
+
+          ::before {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 0.2rem;
+            bottom: 0;
+            left: 0;
+            background-color: ${({ theme }) => theme.colors['base-text']};
 
             transition: 0.4s ease;
           }

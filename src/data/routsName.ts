@@ -31,7 +31,9 @@ export const routsNameMain = {
     domain: `/service/domain/`,
     accommodation: `/service/accommodation/`,
     brandAndDesign: `/service/brandAndDesign/`,
-    emailProfessional: `/service/emailProfessional/`
+    emailProfessional: `/service/emailProfessional/`,
+    filmingVideoEditing: `/service/filmingVideoEditing/`,
+    photography: `/service/photography/`
   },
   blog: {
     index: `/blog`,

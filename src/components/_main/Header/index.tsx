@@ -301,6 +301,16 @@ function HeaderMain() {
                       </SLink>
                       <SLink
                         href={
+                          routsNameMain.service.filmingVideoEditing as string
+                        }
+                      >
+                        <span>Filmagem e edição de video</span>
+                      </SLink>
+                      <SLink href={routsNameMain.service.photography as string}>
+                        <span>Fotografia</span>
+                      </SLink>
+                      <SLink
+                        href={
                           routsNameMain.service
                             .seoAndWebsiteOptimization as string
                         }
@@ -345,6 +355,11 @@ function HeaderMain() {
                       </SLink>
                       <SLink href={routsNameMain.service.chatbot as string}>
                         <span>Mensagens automatizadas</span>
+                      </SLink>
+                      <SLink href={routsNameMain.service.index as string}>
+                        <span className="text-primary">
+                          * Todos os serviços
+                        </span>
                       </SLink>
                     </div>
                   </div>
