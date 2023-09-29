@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { NavLink } from '../../NavLink'
+import { Link } from 'react-router-dom'
 
 // background-color: red;
 
@@ -460,6 +461,8 @@ export const SLinkContainer = styled.div`
 
   a {
     width: 100%;
+    display: inline;
+    color: ${({ theme }) => theme.colors['base-text']};
     position: relative;
 
     :hover {
@@ -475,12 +478,12 @@ export const SLinkContainer = styled.div`
   }
 `
 
-export const SLink = styled(NavLink)`
+export const SLink = styled(Link)`
   position: relative;
   display: flex;
   align-items: center;
 
   font-size: 1rem;
-  padding: 0 4rem 0 0;
+  /* padding: 0 4rem 0 0; */
   transition: ease 0.4s;
 `

@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { NavLink } from '../../../NavLink'
+import { Link } from 'react-router-dom'
 
 interface IBtn {
   isVisible: boolean
@@ -124,7 +125,7 @@ export const SLinkContainer = styled.div`
   }
 `
 
-export const SLink = styled(NavLink)`
+export const SLink = styled(Link)`
   color: ${props => props.theme.colors['base-text']};
   font-size: 2.5rem;
   font-weight: 600;

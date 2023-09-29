@@ -50,6 +50,7 @@ import { darkTheme } from '../../../themes/darkTheme'
 // Images
 import imgLogoSemNOme from '../../../../public/it_logo_name.svg'
 import { IoIosArrowDown } from 'react-icons/io'
+import { Link } from 'react-router-dom'
 
 interface ISettings {
   name: string
@@ -193,9 +194,9 @@ function HeaderMain() {
       />
 
       <HeaderContainerStyles>
-        <a href="/" className="containerLogo">
+        <Link to="/" className="containerLogo">
           <img src={imgLogoSemNOme} alt="Tchossy" />
-        </a>
+        </Link>
 
         <div className="containerMenu">
           <div className="containerTop">
@@ -231,13 +232,11 @@ function HeaderMain() {
             <nav>
               <SLinkContainer>
                 <span>
-                  <SLink exact href={routsNameMain.home as string}>
-                    Casa
-                  </SLink>
+                  <SLink to={routsNameMain.home as string}>Casa</SLink>
                 </span>
 
                 <span>
-                  <SLink href={routsNameMain.about as string}>Sobre</SLink>
+                  <SLink to={routsNameMain.about as string}>Sobre</SLink>
                 </span>
 
                 <div className="dropdown">
@@ -247,22 +246,20 @@ function HeaderMain() {
                   </span>
                   <div className="dropdown-content">
                     <SLink
-                      href={routsNameMain.otherPages.projects.index as string}
+                      to={routsNameMain.otherPages.projects.index as string}
                     >
                       Projetos
                     </SLink>
-                    <SLink href={routsNameMain.otherPages.team.index as string}>
+                    <SLink to={routsNameMain.otherPages.team.index as string}>
                       Equipe
                     </SLink>
-                    <SLink
-                      href={routsNameMain.otherPages.testimonial as string}
-                    >
+                    <SLink to={routsNameMain.otherPages.testimonial as string}>
                       Depoimentos
                     </SLink>
-                    <SLink href={routsNameMain.otherPages.pricing as string}>
+                    <SLink to={routsNameMain.otherPages.pricing as string}>
                       Preços
                     </SLink>
-                    <SLink href={routsNameMain.otherPages.faq as string}>
+                    <SLink to={routsNameMain.otherPages.faq as string}>
                       FAQ
                     </SLink>
                   </div>
@@ -276,16 +273,16 @@ function HeaderMain() {
                   <div className="dropdown-content-tab">
                     <div className="dropdown-content-tab-column">
                       <h3>Aplicação e Sistema</h3>
-                      <SLink href={routsNameMain.service.website as string}>
+                      <SLink to={routsNameMain.service.website as string}>
                         <span>Website</span>
                       </SLink>
-                      <SLink href={routsNameMain.service.eCommerce as string}>
+                      <SLink to={routsNameMain.service.eCommerce as string}>
                         <span>Loja Virtual (E-Commerce)</span>
                       </SLink>
-                      <SLink href={routsNameMain.service.mobile as string}>
+                      <SLink to={routsNameMain.service.mobile as string}>
                         <span>Aplicação Móvel</span>
                       </SLink>
-                      <SLink href={routsNameMain.service.system as string}>
+                      <SLink to={routsNameMain.service.system as string}>
                         <span>Sistema diversos</span>
                       </SLink>
                     </div>
@@ -293,40 +290,38 @@ function HeaderMain() {
                     <div className="dropdown-content-tab-column">
                       <h3>Marketing Digital</h3>
                       <SLink
-                        href={
+                        to={
                           routsNameMain.service.socialMediaManagement as string
                         }
                       >
                         <span>Gestão de Mídias Sociais</span>
                       </SLink>
                       <SLink
-                        href={
-                          routsNameMain.service.filmingVideoEditing as string
-                        }
+                        to={routsNameMain.service.filmingVideoEditing as string}
                       >
                         <span>Filmagem e edição de video</span>
                       </SLink>
-                      <SLink href={routsNameMain.service.photography as string}>
+                      <SLink to={routsNameMain.service.photography as string}>
                         <span>Fotografia</span>
                       </SLink>
                       <SLink
-                        href={
+                        to={
                           routsNameMain.service
                             .seoAndWebsiteOptimization as string
                         }
                       >
                         <span>SEO e Otimização de Sites</span>
                       </SLink>
-                      <SLink href={routsNameMain.service.googleAds as string}>
+                      <SLink to={routsNameMain.service.googleAds as string}>
                         <span>Google ADS</span>
                       </SLink>
                       <SLink
-                        href={routsNameMain.service.sponsoredLinks as string}
+                        to={routsNameMain.service.sponsoredLinks as string}
                       >
                         <span>Links Patrocinados</span>
                       </SLink>
                       <SLink
-                        href={routsNameMain.service.contentMarketing as string}
+                        to={routsNameMain.service.contentMarketing as string}
                       >
                         <span>Marketing de Conteúdo</span>
                       </SLink>
@@ -334,29 +329,27 @@ function HeaderMain() {
 
                     <div className="dropdown-content-tab-column">
                       <h3>Outros</h3>
-                      <SLink href={routsNameMain.service.domain as string}>
+                      <SLink to={routsNameMain.service.domain as string}>
                         <span>Domínio</span>
                       </SLink>
-                      <SLink
-                        href={routsNameMain.service.accommodation as string}
-                      >
+                      <SLink to={routsNameMain.service.accommodation as string}>
                         <span>Hospedagem</span>
                       </SLink>
 
                       <SLink
-                        href={routsNameMain.service.brandAndDesign as string}
+                        to={routsNameMain.service.brandAndDesign as string}
                       >
                         <span>Branding & Design</span>
                       </SLink>
                       <SLink
-                        href={routsNameMain.service.emailProfessional as string}
+                        to={routsNameMain.service.emailProfessional as string}
                       >
                         <span>Email Profissional</span>
                       </SLink>
-                      <SLink href={routsNameMain.service.chatbot as string}>
+                      <SLink to={routsNameMain.service.chatbot as string}>
                         <span>Mensagens automatizadas</span>
                       </SLink>
-                      <SLink href={routsNameMain.service.index as string}>
+                      <SLink to={routsNameMain.service.index as string}>
                         <span className="text-primary">
                           * Todos os serviços
                         </span>
@@ -366,13 +359,11 @@ function HeaderMain() {
                 </div>
 
                 <span>
-                  <SLink href={routsNameMain.blog.index as string}>Blog</SLink>
+                  <SLink to={routsNameMain.blog.index as string}>Blog</SLink>
                 </span>
 
                 <span>
-                  <SLink href={routsNameMain.contact as string}>
-                    Contactos
-                  </SLink>
+                  <SLink to={routsNameMain.contact as string}>Contactos</SLink>
                 </span>
               </SLinkContainer>
             </nav>

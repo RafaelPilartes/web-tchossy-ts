@@ -45,7 +45,7 @@ const ModalMenuMobile: React.FC<ModalMenuMobileInterface> = ({
   }
   const mapLinks = menu.map((item, index) => (
     <li key={index}>
-      <SLink onClick={closeNave} href={item.to as string}>
+      <SLink onClick={closeNave} to={item.to as string}>
         {item.label}
       </SLink>
     </li>
