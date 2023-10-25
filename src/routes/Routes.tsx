@@ -6,6 +6,7 @@ import Loading from '../pages/loading'
 
 const Home = React.lazy(() => import('../pages/main'))
 const About = React.lazy(() => import('../pages/main/about'))
+const Affiliates = React.lazy(() => import('../pages/main/affiliates'))
 
 const Service = React.lazy(() => import('../pages/main/services/'))
 const WebsiteService = React.lazy(
@@ -78,6 +79,15 @@ export function Router() {
             element={
               <React.Suspense fallback={<Loading />}>
                 <About />
+              </React.Suspense>
+            }
+          />
+          {/* Affiliates */}
+          <Route
+            path={routsNameMain.affiliates}
+            element={
+              <React.Suspense fallback={<Loading />}>
+                <Affiliates />
               </React.Suspense>
             }
           />

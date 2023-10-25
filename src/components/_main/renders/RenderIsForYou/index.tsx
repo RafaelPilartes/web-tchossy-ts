@@ -7,28 +7,25 @@ import { NavLink } from '../../../NavLink'
 
 import { CardContainer } from './styles'
 
-interface RenderBenefitsInterface {
-  imgUrl: string
+interface RenderIsForYouInterface {
   title: string
+  description: string
   icon: any
 }
 
-const RenderBenefits: React.FC<RenderBenefitsInterface> = ({
-  imgUrl,
+const RenderIsForYou: React.FC<RenderIsForYouInterface> = ({
   title,
+  description,
   icon
 }): JSX.Element => {
   return (
     <CardContainer data-aos="flip-left">
       <div>
-        <div className="containerImg">
-          <img src={imgUrl} alt="" />
-          <div className="shadow"></div>
-        </div>
-        <div className="containerFloat">
-          <span>{icon}</span>
+        <div className="containerContent">
           <div className="containerInfo">
+            <span>{icon}</span>
             <h2> {title} </h2>
+            <p> {description} </p>
           </div>
         </div>
       </div>
@@ -36,4 +33,4 @@ const RenderBenefits: React.FC<RenderBenefitsInterface> = ({
   )
 }
 
-export default RenderBenefits
+export default RenderIsForYou

@@ -477,7 +477,7 @@ export const ContainerHome = styled.div`
         gap: 1.2rem;
 
         p {
-          font-size: 1.06rem;
+          font-size: 0.9rem;
           font-weight: 400;
           line-height: 1.8rem;
         }
@@ -592,8 +592,8 @@ export const ContainerHome = styled.div`
 
           .containerImg2 {
             position: absolute;
-            top: -4rem;
-            right: 0;
+            top: 2rem;
+            right: 3rem;
             display: block;
 
             object-fit: cover;
@@ -603,8 +603,10 @@ export const ContainerHome = styled.div`
               vertical-align: middle;
               display: inline-block;
 
+              max-width: 8rem;
+
               @media (max-width: 662px) {
-                width: 8rem;
+                width: 6rem;
               }
             }
           }
@@ -813,7 +815,6 @@ export const ContainerHome = styled.div`
 
   .services {
     padding: 10rem 0 6rem 0;
-    background-color: ${({ theme }) => theme.colors['brand-base-dark']};
     background-image: url('backgrounds/servicesBg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -1232,7 +1233,7 @@ export const ContainerHome = styled.div`
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 5rem;
+      gap: 2rem;
     }
     .containerMemberExperts {
       position: relative;
@@ -1244,6 +1245,85 @@ export const ContainerHome = styled.div`
       flex-direction: row;
       gap: 2rem 0;
       flex-wrap: wrap;
+    }
+  }
+
+  .affiliates {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0;
+
+    .containerImg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+
+      /* max-width: 20rem; */
+
+      object-fit: cover;
+      overflow: hidden;
+
+      opacity: 0.1;
+
+      img {
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+
+    .containerOurExperts {
+      position: relative;
+
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .imageSection {
+    }
+  }
+
+  .messageCustom {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0;
+
+    .containerImg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+
+      /* max-width: 20rem; */
+
+      object-fit: cover;
+      overflow: hidden;
+
+      opacity: 0.1;
+
+      img {
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+
+    .containerOurExperts {
+      position: relative;
+
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
     }
   }
 

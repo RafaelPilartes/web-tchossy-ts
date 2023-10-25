@@ -263,7 +263,7 @@ function About() {
 
                 <span>+</span>
               </div>
-              <h3>Anos Gloriosos</h3>
+              <h3>Anos de experiencia</h3>
             </div>
 
             <div className="contentCountUp">

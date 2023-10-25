@@ -107,8 +107,7 @@ export const HeaderContainerStyles = styled.header`
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 2.6rem;
-        background-color: #eee;
+        gap: 1rem;
         padding: 0.8rem 4rem;
 
         svg {
@@ -448,14 +447,14 @@ export const HeaderContainerStyles = styled.header`
   }
 `
 
-export const SLinkContainer = styled.div`
+export const SLinkContainer = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 2rem;
 
-  span {
+  li {
     font-family: 'Rubik', sans-serif;
   }
 

@@ -2,7 +2,13 @@ import { useContext, useEffect, useState } from 'react'
 
 // Moludos de Icons
 import { MdEmail, MdAccessTimeFilled } from 'react-icons/md'
-import { BsFacebook, BsInstagram, BsTwitter, BsWhatsapp } from 'react-icons/bs'
+import {
+  BsFacebook,
+  BsInstagram,
+  BsLinkedin,
+  BsTwitter,
+  BsWhatsapp
+} from 'react-icons/bs'
 import { BiMenuAltLeft, BiSearchAlt } from 'react-icons/bi'
 import { CgMenuGridO } from 'react-icons/cg'
 
@@ -206,7 +212,10 @@ function HeaderMain() {
               <div className="baseInfo">
                 <div className="containerEmail">
                   <MdEmail color={defaultTheme.colors['brand-secondary']} />
-                  <a href="mailto:geral@tchossy.com">
+                  <a
+                    href="mailto:geral@tchossy.com"
+                    title="Deixe nos uma mensagem"
+                  >
                     <span>geral@tchossy.com</span>
                   </a>
                 </div>
@@ -221,30 +230,64 @@ function HeaderMain() {
             </div>
 
             <div className="containerRight">
-              <BsFacebook />
-              <BsInstagram />
-              <BsWhatsapp />
-              <BsTwitter />
+              <a
+                href="https://www.facebook.com/Tochossy"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <BsFacebook />
+              </a>
+              <a
+                href="https://www.instagram.com/tchossysolutions/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <BsInstagram />
+              </a>
+              <a
+                href="https://wa.me/244923414621?text=Tchossy Solution"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <BsWhatsapp />
+              </a>
+              <a
+                href="https://ao.linkedin.com/in/tchossy-solution-74a00b273"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <BsLinkedin />
+              </a>
             </div>
           </div>
 
           <div className="containerButton">
             <nav>
               <SLinkContainer>
-                <span>
+                <li
+                  itemScope
+                  itemType="https://www.schema.org/SiteNavigationElement"
+                >
                   <SLink to={routsNameMain.home as string}>Casa</SLink>
-                </span>
+                </li>
 
-                <span>
+                <li
+                  itemScope
+                  itemType="https://www.schema.org/SiteNavigationElement"
+                >
                   <SLink to={routsNameMain.about as string}>Sobre</SLink>
-                </span>
+                </li>
 
                 <div className="dropdown">
                   <span className="dropbtn">
                     Recursos
                     <IoIosArrowDown />
                   </span>
-                  <div className="dropdown-content">
+                  <li
+                    itemScope
+                    itemType="https://www.schema.org/SiteNavigationElement"
+                    className="dropdown-content"
+                  >
                     <SLink
                       to={routsNameMain.otherPages.projects.index as string}
                     >
@@ -262,7 +305,7 @@ function HeaderMain() {
                     <SLink to={routsNameMain.otherPages.faq as string}>
                       FAQ
                     </SLink>
-                  </div>
+                  </li>
                 </div>
 
                 <div className="dropdown">
@@ -358,13 +401,19 @@ function HeaderMain() {
                   </div>
                 </div>
 
-                <span>
+                <li
+                  itemScope
+                  itemType="https://www.schema.org/SiteNavigationElement"
+                >
                   <SLink to={routsNameMain.blog.index as string}>Blog</SLink>
-                </span>
+                </li>
 
-                <span>
+                <li
+                  itemScope
+                  itemType="https://www.schema.org/SiteNavigationElement"
+                >
                   <SLink to={routsNameMain.contact as string}>Contactos</SLink>
-                </span>
+                </li>
               </SLinkContainer>
             </nav>
 

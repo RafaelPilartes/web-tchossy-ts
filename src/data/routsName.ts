@@ -16,6 +16,7 @@ export const routsNameMain = {
     faq: `/faq`
   },
   about: `/about`,
+  affiliates: `/affiliates`,
   service: {
     index: `/service`,
     website: `/service/website/`,

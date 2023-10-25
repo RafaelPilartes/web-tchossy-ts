@@ -654,7 +654,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="solutions ">
+      <section className="solutions">
         <div className="containerContent">
           <div className="contentSolutions" data-aos="fade-right">
             {listSolutions}
@@ -705,6 +705,100 @@ function Home() {
                   colorSecondary={defaultTheme.colors['brand-super-dark']}
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Afiliado Tchossy */}
+      <section className="affiliates">
+        <div className="containerImg">
+          <img src="backgrounds/bg-lines-main.png" alt="" />
+        </div>
+
+        <div className="containerContent">
+          <div className="containerOurExperts">
+            <div className="containerHeader">
+              <div className="containerLeft">
+                <div className="containerTitleSection">
+                  <div>
+                    <span>Afiliado</span>
+                    <h4>Parceria Lucrativa</h4>
+                    <h1>Programa de marketing de afiliados do Tchossy</h1>
+                  </div>
+                </div>
+              </div>
+
+              <div className="containerRight" data-aos="fade-left">
+                <p>
+                  Junte-se a nós e descubra uma oportunidade única de ganhar
+                  dinheiro enquanto promove nossos serviços.
+                </p>
+              </div>
+            </div>
+
+            <div className="section1">
+              <div className="descriptionSection">
+                <div className="contentDescriptions">
+                  <p>
+                    No Programa Afiliado Tchossy, valorizamos parcerias sólidas
+                    e recompensamos aqueles que nos ajudam a crescer. Ao se
+                    tornar nosso afiliado, você terá a chance de ganhar
+                    comissões atrativas enquanto promove nossos serviços de
+                    tecnologia, marketing, design e muito mais. Seja parte da
+                    nossa comunidade de afiliados e aproveite as vantagens de
+                    promover uma marca de sucesso. Juntos, podemos alcançar o
+                    próximo nível de sucesso.
+                  </p>
+
+                  <ul>
+                    <li>
+                      <BsFillCheckCircleFill />
+                      <p>
+                        <strong>Ganhos Generosos:</strong>
+                        <br />
+                        Receba comissões atraentes por cada conversão
+                        bem-sucedida gerada por meio do seu link de afiliado;
+                      </p>
+                    </li>
+                    <li>
+                      <BsFillCheckCircleFill />
+                      <p>
+                        <strong>Comissões Recorrentes:</strong>
+                        <br />
+                        Alguns serviços Tchossy geram comissões recorrentes,
+                        proporcionando uma fonte contínua de ;
+                      </p>
+                    </li>
+                    <li>
+                      <BsFillCheckCircleFill />
+                      <p>
+                        <strong>Oportunidade de Crescimento:</strong>
+                        <br /> À medida que você constrói uma base de clientes,
+                        suas comissões podem aumentar significativamente,
+                        oferecendo oportunidades de crescimento contínuo.
+                      </p>
+                    </li>
+                  </ul>
+
+                  <div className="containerBottom">
+                    <ButtonSeeMore
+                      value={'Tornar-se afilhado'}
+                      onClick={() => goTo(routsNameMain.affiliates)}
+                      colorBase={defaultTheme.colors['brand-primary']}
+                      colorSecondary={defaultTheme.colors['brand-super-dark']}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <img
+                data-aos="fade-up-left"
+                className="imageSection"
+                src="/program/affiliates.png"
+                // src="https://www.idinheiro.com.br/wp-content/uploads/2022/01/melhores-programas-de-afiliados-1.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -867,7 +961,7 @@ function Home() {
       */}
 
       {/* Mensagens automatizadas */}
-      <section className="ourExperts">
+      <section className="messageCustom">
         <div className="containerImg">
           <img src="backgrounds/bg-lines-main.png" alt="" />
         </div>
